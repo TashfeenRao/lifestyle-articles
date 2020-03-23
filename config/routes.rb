@@ -7,4 +7,5 @@ delete '/logout', to: 'sessions#destroy'
   resources :users
   resources :articles
   resources :categories
+  resources :votes
 end

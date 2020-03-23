@@ -1,12 +1,16 @@
 module ApplicationHelper
     include SessionsHelper
 
+    def vote_count(article)
+      article.votes.count
+    end
+    
     def vote_devote(article)
         vote = Vote.find_by(user_id: current_user.id,article_id:article.id)
         if vote
-            link_to('Delete Vote', article_vote_path(id: vote.id, article_id: article.id), method: :delete)
+            button_to "Devote", {controller: "votes", action: "destroy",id: vote.id,article_id: article.id },method: :delete , class:"btn btn-primary"
         else
-            link_to('Vote', article_vote_path(article_id: article.id), method: :post)
+         button_to "Vote", {controller: "votes", action: "create",article_id: article.id },method: :post , class:"btn btn-primary"
         end
     end
 
