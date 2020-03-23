@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <%= form_for(@user) do|f|%>
+            <%= render 'shared/errors', object: f.object%>
+            <%= f.text_field :name, placeholder:"enter username"%>
+                <%= f.submit "Register", class:"btn btn-primary"%>
+            <%end%>
+        </div>
+    </div>
+</div>

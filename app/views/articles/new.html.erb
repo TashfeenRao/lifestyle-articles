@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="row">
+        <%= form_for(@article) do|f|%>
+        <div class="col-md-12">
+            <%= render 'shared/errors', object: f.object%>
+            <%= f.text_field :title, placeholder:"Title"%>
+            <%= select_tag(:category_id, options_from_collection_for_select(Category.all, :id, :name), include_blank: "Select Category")%>
+        </div>
+        <div class="col-md-12">
+            <%= f.text_area :text,:cols => "100", :rows => "10"%>
+        </div>
+        <div class="col-md-12">
+            <%= f.file_field :image%>
+            <%= f.submit "Post", class:"btn btn-primary"%>
+        </div>
+        <%end%>
+    </div>
+</div>

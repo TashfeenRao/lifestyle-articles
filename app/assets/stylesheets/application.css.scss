@@ -1,0 +1,16 @@
+@import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+.card-img {
+   width: 300px !important;
+   height: 300px !important;
+}
+.card-body {
+    h4 {
+        font-size: 100;
+        color: rgb(255, 166, 50);
+    }
+    .card-title p {
+        border-bottom: 1px solid rgb(255, 166, 50);
+    }
+}
