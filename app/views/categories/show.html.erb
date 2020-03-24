@@ -1,21 +1,26 @@
-<div class="row row-cols-1 row-cols-md-2">
-    <%article_with_category%>
-    <%if @art_cat.each do |art|%>
-      <div class="col mb-4">
-    <div class="card flex-row flex-wrap">
-        <%= image_tag(art.image,class:"card-img")%>
-        <div class="card-body">
-            <h4 class="card-title"><%= @category.name%></h4>
-            <h5 class="card-title"><%= art.title%></h5>
-            <p class="card-text"><%= art.text%></p>
-            <small class="text-muted"><%= vote_devote(art)%></small>
-            <small class="text-muted">Count <%= vote_count(art)%></small>
-        </div>
-        <div class="card-footer">
-            <small class="text-muted">Last updated 3 mins ago</small>
-        </div>
+<%= render 'shared/header'%>
+<div class=container-fluid>
+    <div class=row>
+            <%article_with_category%>
+            <%if @art_cat.each do |art|%>
+                    <div class="col-md d-flex flex-wrap">
+            <div class="card mb-3">
+                <div class="col-md-4">
+                    <%= image_tag(art.image,class:"card-img")%>
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h4 class="card-title"><%= @category.name%></h4>
+                        <h5 class="card-title"><%= art.title%></h5>
+                        <p class="card-text">
+                            <%= truncate(art.text,length:50)%><%= link_to "read more", article_path(art)%></p>
+                        <small class="text-muted"><%= vote_devote(art)%></small>
+                        <small class="text-muted">Count <%= vote_count(art) %></small>
+                    </div>
+                </div>
+            </div>
+                    </div>
+            <%end%>
+            <%end%>
     </div>
-    </div>
-    <%end%>
-    <%end%>
 </div>

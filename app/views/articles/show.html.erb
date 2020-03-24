@@ -1,0 +1,19 @@
+<%= render 'shared/header'%>
+<div class="row row-cols-1 row-cols-md-2">
+    <%if @Article %>
+      <div class="col mb-4">
+    <div class="card flex-row flex-wrap">
+        <%= image_tag(@Article.image,class:"card-img")%>
+        <div class="card-body">
+            <h5 class="card-title"><%= @Article.title%></h5>
+            <p class="card-text"><%= @Article.text%></p>
+            <small class="text-muted"><%= vote_devote(@Article)%></small>
+            <small class="text-muted">Count <%= vote_count(@Article)%></small>
+        </div>
+        <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+    </div>
+    </div>
+    <%end%>
+</div>

@@ -1,6 +1,9 @@
 module ApplicationHelper
     include SessionsHelper
-
+    
+    def categories
+        @categories = Category.all
+    end
     def most_recent(cat)
         @most_recent = cat.articles.order("created_at DESC").limit(1) 
     end
@@ -8,9 +11,10 @@ module ApplicationHelper
     def all_articles
         @art = Article.all
     end
-    
+    def featured(article)
+    end
     def vote_count(article)
-      a = article.votes.count
+     a = article.votes.count
     end
     
     def vote_devote(article)

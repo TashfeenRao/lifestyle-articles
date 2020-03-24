@@ -1,13 +1,22 @@
 @import "bootstrap";
 @import "font-awesome-sprockets";
 @import "font-awesome";
-
+.card-img-overlay {
+	.cat {
+		border-bottom: 1px solid rgb(255, 166, 50);
+		width: 110px;
+		text-decoration: none;
+	}
+}
 .overlay{
     position: absolute;
     right: 0;
     bottom: 0;
     left: 0;
-    padding: 1.25rem
+	padding: 1.25rem;
+.featured-text{
+	color: rgb(255, 166, 50);
+	}
 }
 .featured {
 	width: 800px !important;

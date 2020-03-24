@@ -4,28 +4,33 @@
 <% count = art.votes.count %>
 <%if count > ref%>
 <% ref = count%>
+<% article = art %>
 <div class=container-fluid>
     <div class=row>
         <div class="col-md d-flex flex-wrap">
             <div class="card featured bg-dark text-white ml-2 mt-1">
-                <%= image_tag(art.image,class:"featured")%>
+                <%= image_tag(article.image,class:"featured")%>
                 <div class="overlay">
-                    <h5 class="card-title"><%= art.title%></h5>
-                    <h5 class="card-title"><%= art.text%></h5>
+                    <h5 class="card-title featured-text"><%= article.title%></h5>
+                    <h5 class="card-title"><%= article.text%></h5>
                 </div>
             </div>
             <% @categories.each do |cat|%>
             <%if most_recent(cat)%>
             <% @most_recent.each do |art|%>
-            <div class="card bg-dark text-white ml-2 mt-1">
-                <%= image_tag(art.image,class:"card-img")%>
+            <div class="card bg-dark ml-2 mt-1">
+                <%= link_to image_tag(art.image , class:'card-img'),  article_path(art)%>
+
+                <div class="card-img-overlay text-white">
+                    <%= link_to "#{cat.name}", category_path(cat), class:"card-title cat d-flex text-white"%>
+                </div>
                 <div class="overlay">
-                    <h5 class="card-title"><%= cat.name%></h5>
-                    <h5 class="card-title"><%= art.title%></h5>
+                    <h5 class="card-title"><%= link_to "#{art.title}", article_path(art)%></h5>
+                    
                 </div>
             </div>
             <%end%>
-            <%end%>
+                       <%end%>
             <%end%>
         </div>
     </div>
