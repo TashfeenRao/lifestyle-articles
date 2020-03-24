@@ -1,0 +1,23 @@
+                            <% all_articles %>
+                              <% ref = 0%>
+                            <% @art.each do |art|%>
+                            <% count = art.votes.count %>
+                            <%if count > ref%>
+                            <% ref = count%>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 col-lg-5">
+                    <div class="featured-article">
+                        <a href="#">
+                            <%= image_tag(art.image,class:"thumb")%>
+                        </a>
+                        <div class="block-title">
+                            <h2><%= art.title%></h2>
+                            <p class="by-author"><small><%= art.text%></small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <%end%>
+        <%end%>

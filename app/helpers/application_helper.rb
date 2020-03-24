@@ -1,8 +1,12 @@
 module ApplicationHelper
     include SessionsHelper
 
+    def all_articles
+        @art = Article.all
+    end
+    
     def vote_count(article)
-      article.votes.count
+      a = article.votes.count
     end
     
     def vote_devote(article)
