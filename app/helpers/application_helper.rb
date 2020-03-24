@@ -1,6 +1,10 @@
 module ApplicationHelper
     include SessionsHelper
 
+    def most_recent(cat)
+        @most_recent = cat.articles.order("created_at DESC").limit(1) 
+    end
+    
     def all_articles
         @art = Article.all
     end
