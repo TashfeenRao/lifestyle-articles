@@ -1,6 +1,6 @@
-# Scaffold for social media app with Ruby on Rails
+# Lifestyle Articles
 
-> This repo includes intial code for social media app with basic styling. Its purpose is to be a starting point for Microverse students.
+>It is Rails capstone project
 
 ## Built With
 
@@ -57,12 +57,11 @@ Open `https://tashstay.herokuapp.com/` in your browser.
 
 ### Deployment
 
-`https://tashstay.herokuapp.com/`
+`https://salty-ravine-98503.herokuapp.com/`
 
 ## Authors
 
 Tashfeen Rao `https://github.com/TashfeenRao`
-Ko Nyan `https://github.com/konyan`
 
 ## 🤝 Contributing
 
