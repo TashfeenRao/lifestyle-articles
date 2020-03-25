@@ -7,6 +7,7 @@ class UsersController < ApplicationController
     @user = User.new(user_param)
     if @user.save
       flash[:success] = 'You have been registerd'
+      log_in(@user)
       redirect_to root_path
     else
       render 'new'
