@@ -7,7 +7,9 @@
         <div class="card-body">
             <h5 class="card-title"><%= @Article.title%></h5>
             <p class="card-text"><%= @Article.text%></p>
+            <% if current_user%>
             <small class="text-muted"><%= vote_devote(@Article)%></small>
+            <%end%>
             <small class="text-muted">Count <%= vote_count(@Article)%></small>
         </div>
         <div class="card-footer">

@@ -1,25 +1,27 @@
 <%= render 'shared/header'%>
-<div class=container-fluid>
-    <div class=row>
+<div class="container-fluid">
+    <div class="row d-flex flex-wrap justify-content-center">
             <%article_with_category%>
             <%if @art_cat.each do |art|%>
-                    <div class="col-md d-flex flex-wrap">
-            <div class="card mb-3">
-                <div class="col-md-4">
+            <div class="card mb-3 flex-direction col-sm-12 col-md-12 col-lg-6 justify-content-center">
+                <div class="">
                     <%= image_tag(art.image,class:"card-img")%>
                 </div>
-                <div class="col-md-8">
-                    <div class="card-body">
-                        <h4 class="card-title"><%= @category.name%></h4>
-                        <h5 class="card-title"><%= art.title%></h5>
-                        <p class="card-text">
-                            <%= truncate(art.text,length:50)%><%= link_to "read more", article_path(art)%></p>
-                        <small class="text-muted"><%= vote_devote(art)%></small>
-                        <small class="text-muted">Count <%= vote_count(art) %></small>
-                    </div>
+                <div class="card-body col-md-5">
+                    <h4 class="card-title"><%= @category.name%></h4>
+                    <h5 class="card-title"><%= link_to "#{art.title}", article_path(art)%></h5>
+                    <p class="card-text">
+                    <%if art.text.length > 50 %>
+                        <%= truncate(art.text,length:50)%><%= link_to "read more", article_path(art)%></p>
+                    <%else%>
+                    <p class="card-text"><%= art.text%> </p>
+                    <%end%>
+                    <% if current_user%>
+                    <small class="text-muted"><%= vote_devote(art)%></small>
+                    <%end%>
+                    <small class="text-muted">Count <%= vote_count(art) %></small>
                 </div>
             </div>
-                    </div>
             <%end%>
             <%end%>
     </div>

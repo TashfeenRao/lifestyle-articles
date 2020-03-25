@@ -8,6 +8,12 @@
 		text-decoration: none;
 	}
 }
+.title-link{
+    text-decoration: none;
+}
+.flex-direction{
+    flex-direction: row !important;
+}
 .overlay{
     position: absolute;
     right: 0;
@@ -29,6 +35,10 @@
    width: 396px !important;
    height: 400px !important;
 }
+.card-img-cat {
+    width: 300px !important;
+    height: 400px !important;
+ }
 .card-body {
     h4 {
         font-size: 100;
@@ -37,4 +47,9 @@
     .card-title p {
         border-bottom: 1px solid rgb(255, 166, 50);
     }
+    .card-title a {
+        text-decoration: none !important;
+        font-size: 100;
+    }
+
 }

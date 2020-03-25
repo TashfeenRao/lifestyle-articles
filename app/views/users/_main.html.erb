@@ -6,13 +6,17 @@
 <% ref = count%>
 <% article = art %>
 <div class=container-fluid>
-    <div class=row>
-        <div class="col-md d-flex flex-wrap">
+    <div class="row d-flex flex-wrap justify-content-center col-sm-12">
             <div class="card featured bg-dark text-white ml-2 mt-1">
                 <%= image_tag(article.image,class:"featured")%>
                 <div class="overlay">
-                    <h5 class="card-title featured-text"><%= article.title%></h5>
-                    <h5 class="card-title"><%= article.text%></h5>
+                     <h5 class="card-title"><%= link_to "#{article.title}", article_path(article)%></h5>
+                    <%if art.text.length > 50 %>
+                        <%= truncate(article.text,length:50)%><%= link_to "read more", article_path(article)%></p>
+                    <%else%>
+                    <h5 class="card-text"><%= article.text%> </h5>
+                    <%end%>
+                   
                 </div>
             </div>
             <% @categories.each do |cat|%>
@@ -32,7 +36,6 @@
             <%end%>
                        <%end%>
             <%end%>
-        </div>
     </div>
 </div>
 <%end%>
