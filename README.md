@@ -1,24 +1,83 @@
-# README
+# Lifestyle Articles
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+>It is Rails capstone project
 
-Things you may want to cover:
+## Built With
 
-* Ruby version
+- Ruby v2.6.5
+- Ruby on Rails v5.2.4
 
-* System dependencies
+## Live Demo
 
-* Configuration
+`https://tashstay.herokuapp.com/`
 
-* Database creation
+## Getting Started
 
-* Database initialization
+To get a local copy up and running follow these simple example steps.
 
-* How to run the test suite
+### Prerequisites
 
-* Services (job queues, cache servers, search engines, etc.)
+Ruby: 2.6.3
+Rails: 6.1.0
+Postgres: >=9.5
 
-* Deployment instructions
+### Setup
 
-* ...
+Instal gems with:
+
+```
+bundle install
+```
+
+Setup database with:
+
+```
+   rails db:create
+   rails db:migrate
+```
+
+### Usage
+
+Start server with:
+
+```
+    rails server
+```
+
+Open `http://localhost:3000/` in your browser.
+Open `https://tashstay.herokuapp.com/` in your browser.
+
+### Run tests
+
+```
+    rpsec --format documentation
+```
+
+> Tests will be added by Microverse students. There are no tests for initial features in order to make sure that students write all tests from scratch.
+
+### Deployment
+
+`https://salty-ravine-98503.herokuapp.com/`
+
+## Authors
+
+Tashfeen Rao `https://github.com/TashfeenRao`
+
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!
+
+Feel free to check the [issues page](issues/).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+Microverse
+Heroku
+
+## 📝 License
+
+TBA
