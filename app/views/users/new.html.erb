@@ -1,11 +1,10 @@
-<div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <%= form_for(@user) do|f|%>
-            <%= render 'shared/errors', object: f.object%>
-            <%= f.text_field :name, placeholder:"enter username"%>
-                <%= f.submit "Register", class:"btn btn-primary"%>
-            <%end%>
-        </div>
-    </div>
+<div class="container text-center">
+<div class="col-md-6">
+<%= form_for(@user,html: {class: "form-signin"}) do|f|%>
+<h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+<label for="inputEmail" class="sr-only">Email address</label>
+<%= f.text_field :name, placeholder:"enter username",class:"form-control"%>
+<%= f.submit "Register", class:"btn btn-lg btn-primary btn-block"%>
+<%end%>
+</div>
 </div>
