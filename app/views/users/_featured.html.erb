@@ -1,22 +1,24 @@
-                            <% all_articles %>
-                              <% ref = 0%>
-                            <% @art.each do |art|%>
-                            <% count = art.votes.count %>
-                            <%if count > ref%>
-                            <% ref = count%>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-5 col-lg-5">
-                    <div class="featured-article">
-                        <a href="#">
-                            <%= image_tag(art.image,class:"thumb")%>
-                        </a>
-                        <div class="block-title">
-                            <h2><%= art.title%></h2>
-                            <p class="by-author"><small><%= art.text%></small></p>
-                        </div>
-                    </div>
+<% all_articles %>
+<% ref = 0%>
+<% @art.each do |art|%>
+<% count = art.votes.count %>
+<%if count > ref%>
+<% ref = count%>
+<% article = art %>
+<div class=container-fluid>
+    <div class="row">
+            <div class="card featured bg-dark text-white col-md-8">
+                <%= image_tag(article.image,class:"featured")%>
+                <div class="overlay">
+                     <h5 class="card-title"><%= link_to "#{article.title}", article_path(article)%></h5>
+                    <%if art.text.length > 50 %>
+                        <%= truncate(article.text,length:50)%><%= link_to "read more", article_path(article)%></p>
+                    <%else%>
+                    <h5 class="card-text"><%= article.text%> </h5>
+                    <%end%>
+                   
                 </div>
             </div>
-        <%end%>
-        <%end%>
+    </div>
+<%end%>
+<%end%>

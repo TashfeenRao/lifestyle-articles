@@ -24,15 +24,17 @@
 	color: rgb(255, 166, 50);
 	}
 }
+.card {
+    padding: 0 !important;
+}
 .featured {
-	width: 800px !important;
 	height: 400px !important;
 }
 .card{
 	border: none !important;
 }
 .card-img {
-   width: 396px !important;
+   width: 397px !important;
    height: 400px !important;
 }
 .card-img-cat {
@@ -51,5 +53,14 @@
         text-decoration: none !important;
         font-size: 100;
     }
+}
 
+@media screen and (min-width: 306px) and (max-width: 576px){
+.col-md-6{
+    display: none !important;
+}
+    .check {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
 }
