@@ -1,6 +1,3 @@
-@import "bootstrap";
-@import "font-awesome-sprockets";
-@import "font-awesome";
 .card-img-overlay {
 	.cat {
 		border-bottom: 1px solid rgb(255, 166, 50);
@@ -34,7 +31,6 @@
 	border: none !important;
 }
 .card-img {
-   width: 397px !important;
    height: 400px !important;
 }
 .card-img-cat {
@@ -49,18 +45,9 @@
     .card-title p {
         border-bottom: 1px solid rgb(255, 166, 50);
     }
-    .card-title a {
-        text-decoration: none !important;
-        font-size: 100;
-    }
 }
-
-@media screen and (min-width: 306px) and (max-width: 576px){
-.col-md-6{
-    display: none !important;
-}
-    .check {
-    flex: 0 0 100%;
-    max-width: 100%;
-}
+.card-title a {
+    text-decoration: none !important;
+    font-size: 100;
+    color: rgb(255, 166, 50) !important;
 }

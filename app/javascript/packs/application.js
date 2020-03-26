@@ -17,3 +17,6 @@ require("channels")
 //
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
+const indicator = document.querySelector('.nav-indicator');
+const items = document.querySelectorAll('.nav-item');
+

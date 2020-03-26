@@ -1,6 +1,7 @@
 <div class="container text-center">
 <div class="col-md-6">
 <%= form_for(:session, url: login_path,html: {class: "form-signin"}) do|f|%>
+<%= render 'shared/errors', object: f.object%>
 <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
 <label for="inputEmail" class="sr-only">Email address</label>
 <%= f.text_field :name, placeholder:"enter username",class:"form-control"%>
