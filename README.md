@@ -9,7 +9,7 @@
 
 ## Live Demo
 
-`https://tashstay.herokuapp.com/`
+`https://calm-bastion-63762.herokuapp.com/`
 
 ## Getting Started
 
@@ -45,7 +45,7 @@ Start server with:
 ```
 
 Open `http://localhost:3000/` in your browser.
-Open `https://tashstay.herokuapp.com/` in your browser.
+Open `https://calm-bastion-63762.herokuapp.com/` in your browser.
 
 ### Run tests
 
@@ -57,7 +57,7 @@ Open `https://tashstay.herokuapp.com/` in your browser.
 
 ### Deployment
 
-`https://tashstay.herokuapp.com/`
+`https://calm-bastion-63762.herokuapp.com/`
 
 ## Authors
 
