@@ -6,7 +6,7 @@ module ApplicationHelper
   end
 
   def most_recent(cat)
-    @most_recent = cat.articles.order('created_at DESC').limit(1)
+    @most_recent = cat.multis.order('created_at DESC').limit(1)
   end
 
   def all_articles
@@ -33,6 +33,6 @@ module ApplicationHelper
   end
 
   def article_with_category
-    @art_cat = @category.articles
+    @art_cat = @category.multis
   end
 end

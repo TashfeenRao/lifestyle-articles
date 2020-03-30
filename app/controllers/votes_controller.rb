@@ -1,7 +1,7 @@
 class VotesController < ApplicationController
   def create
     vote = current_user.votes.new(article_id: params[:article_id])
-    cat = vote.article.category.id
+    cat = vote.article.multis.id
     if vote.save
       redirect_to category_path(cat), notice: 'You voted'
     else
@@ -14,6 +14,6 @@ class VotesController < ApplicationController
     return unless vote
 
     vote.destroy
-    redirect_to category_path(vote.article.category.id)
+    redirect_to category_path(vote.article.multis.id)
   end
 end
