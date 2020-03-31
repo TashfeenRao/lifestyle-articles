@@ -19,6 +19,12 @@ module ApplicationHelper
     article.votes.count
   end
 
+  def delete(article)
+    if current_user.id == article.author_id
+      button_to 'Delete Article', { controller: 'articles', action: 'destroy', article_id: article.id }, method: :delete, class: 'btn btn-danger'
+    end
+  end
+
   def vote_devote(article,cat)
     vote = Vote.find_by(user_id: current_user.id, article_id: article.id)
     if vote

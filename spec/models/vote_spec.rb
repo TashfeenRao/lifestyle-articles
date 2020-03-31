@@ -4,7 +4,7 @@ RSpec.describe Vote, type: :model do
   subject do
     @u = User.create(name: 'tashfeen')
     @c = Category.create(name:"fashion",priority:"1")
-    @a = Article.create(author_id: @u.id,title:'testing',text:'hello',category_id:@c.id)
+    @a = Article.create(author_id: @u.id,title:'testing',text:'hello')
     Vote.new(user_id: @u.id,
              article_id: @a.id)
   end
