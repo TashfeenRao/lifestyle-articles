@@ -4,7 +4,10 @@
         <div class="col-md-12">
             <%= render 'shared/errors', object: f.object%>
             <%= f.text_field :title, placeholder:"Title"%>
-            <%= select_tag(:category_id, options_from_collection_for_select(Category.all, :id, :name), include_blank: "Select Category")%>
+            <%= f.collection_check_boxes :category_ids, Category.all, :id, :name do |b| %>
+            <%= b.check_box %>
+            <%= b.label %>
+            <%end%>
         </div>
         <div class="col-md-12">
             <%= f.text_area :text,:cols => "100", :rows => "10"%>
