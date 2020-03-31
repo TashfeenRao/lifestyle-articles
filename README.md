@@ -46,6 +46,8 @@ Start server with:
 
 Open `http://localhost:3000/` in your browser.
 
+Open `https://calm-bastion-63762.herokuapp.com/` in your browser.
+
 ### Run tests
 
 ```

@@ -6,9 +6,8 @@ class ArticlesController < ApplicationController
 
   def create
     @article = current_user.articles.new(article_params)
-    @article.category_id = params[:category_id]
     if @article.save
-      redirect_to root_path
+     redirect_to root_path
       flash[:success] = 'Article has been published'
     else
       render 'new'
@@ -22,6 +21,6 @@ class ArticlesController < ApplicationController
   private
 
   def article_params
-    params.require(:article).permit(:title, :text, :image)
+    params.require(:article).permit(:title, :text, :image,category_ids:[] )
   end
 end
