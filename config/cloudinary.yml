@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: dshspfli3
+  api_key: '214633185611191'
+  api_secret: AByGPxYGSxDXFhF0oLJxzyWhFRc
+  enhance_image_tag: true
+  static_file_support: false
+production:
+  cloud_name: dshspfli3
+  api_key: '214633185611191'
+  api_secret: AByGPxYGSxDXFhF0oLJxzyWhFRc
+  enhance_image_tag: true
+  static_file_support: true
+test:
+  cloud_name: dshspfli3
+  api_key: '214633185611191'
+  api_secret: AByGPxYGSxDXFhF0oLJxzyWhFRc
+  enhance_image_tag: true
+  static_file_support: false
