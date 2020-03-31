@@ -1,6 +1,6 @@
-# Scaffold for social media app with Ruby on Rails
+# Life Style Articles
 
-> This repo includes intial code for social media app with basic styling. Its purpose is to be a starting point for Microverse students.
+> This is a blog website. User can read articles. Only members can write articles with images and category to article. logged in user can also give vote to articles
 
 ## Built With
 
@@ -45,6 +45,7 @@ Start server with:
 ```
 
 Open `http://localhost:3000/` in your browser.
+
 Open `https://calm-bastion-63762.herokuapp.com/` in your browser.
 
 ### Run tests
