@@ -16,7 +16,7 @@
                     <p class="card-text"><%= art.text%> </p>
                     <%end%>
                     <% if current_user%>
-                    <small class="text-muted"><%= vote_devote(art)%></small>
+                    <small class="text-muted"><%= vote_devote(art,@category)%></small>
                     <%end%>
                     <small class="text-muted">Count <%= vote_count(art) %></small>
                 </div>

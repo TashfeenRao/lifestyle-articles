@@ -19,12 +19,12 @@ module ApplicationHelper
     article.votes.count
   end
 
-  def vote_devote(article)
+  def vote_devote(article,cat)
     vote = Vote.find_by(user_id: current_user.id, article_id: article.id)
     if vote
-      button_to 'Devote', { controller: 'votes', action: 'destroy', id: vote.id, article_id: article.id }, method: :delete, class: 'btn btn-danger'
+      button_to 'Devote', { controller: 'votes', action: 'destroy', id: vote.id, article_id: article.id,category_id: cat.id }, method: :delete, class: 'btn btn-danger'
     else
-      button_to 'Vote', { controller: 'votes', action: 'create', article_id: article.id }, method: :post, class: 'btn btn-primary'
+      button_to 'Vote', { controller: 'votes', action: 'create', article_id: article.id,category_id: cat.id }, method: :post, class: 'btn btn-primary'
     end
   end
 
