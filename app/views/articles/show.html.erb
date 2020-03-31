@@ -3,7 +3,7 @@
           <%if @article %>
         <h1 class="blog-title"><%= @article.title%></h1>
         <% if current_user%>
-            <small class="text-muted"><%= vote_devote(@article,@category)%></small>
+            <small class="text-muted"><%= vote_devote2(@article)%></small>
             <%end%>
             <small class="text-muted">Count <%= vote_count(@article)%></small>
       </div>
