@@ -8,7 +8,7 @@ class ArticlesController < ApplicationController
     @article = current_user.articles.new(article_params)
     if @article.save
      redirect_to root_path
-      flash[:success] = 'Article has been published'
+      flash[:success] = 'New Article published'
     else
       render 'new'
     end

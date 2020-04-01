@@ -10,11 +10,11 @@
             <%end%>
         </div>
         <div class="col-md-12">
-            <%= f.text_area :text,:cols => "100", :rows => "10"%>
+            <%= f.text_area :text,:cols => "100", :rows => "10", id:"text"%>
         </div>
         <div class="col-md-12">
             <%= f.file_field :image%>
-            <%= f.submit "Post", class:"btn btn-primary"%>
+            <%= f.submit "Post", class:"btn btn-primary",id:"Choose"%>
         </div>
         <%end%>
     </div>
