@@ -7,7 +7,7 @@ class ArticlesController < ApplicationController
   def create
     @article = current_user.articles.new(article_params)
     if @article.save
-     redirect_to root_path
+      redirect_to root_path
       flash[:success] = 'New Article published'
     else
       render 'new'
@@ -17,7 +17,7 @@ class ArticlesController < ApplicationController
   def destroy
     article = Article.find_by(id: params[:article_id])
     article.destroy
-    flash[:danger] = "You deleted article"
+    flash[:danger] = 'You deleted article'
     redirect_to root_path
   end
 
@@ -28,6 +28,6 @@ class ArticlesController < ApplicationController
   private
 
   def article_params
-    params.require(:article).permit(:title, :text, :image,category_ids:[] )
+    params.require(:article).permit(:title, :text, :image, category_ids: [])
   end
 end
