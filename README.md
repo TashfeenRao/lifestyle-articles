@@ -1,6 +1,6 @@
-# Lifestyle Articles
+# Life Style Articles
 
->It is Rails capstone project
+> This is a blog website. User can read articles. Only members can write articles with images and category to article. logged in user can also give vote to articles
 
 ## Built With
 
@@ -9,7 +9,7 @@
 
 ## Live Demo
 
-`https://tashstay.herokuapp.com/`
+`https://calm-bastion-63762.herokuapp.com/`
 
 ## Getting Started
 
@@ -18,7 +18,7 @@ To get a local copy up and running follow these simple example steps.
 ### Prerequisites
 
 Ruby: 2.6.3
-Rails: 6.1.0
+Rails: 5.2.3
 Postgres: >=9.5
 
 ### Setup
@@ -45,7 +45,8 @@ Start server with:
 ```
 
 Open `http://localhost:3000/` in your browser.
-Open `https://tashstay.herokuapp.com/` in your browser.
+
+Open `https://calm-bastion-63762.herokuapp.com/` in your browser.
 
 ### Run tests
 
@@ -57,11 +58,12 @@ Open `https://tashstay.herokuapp.com/` in your browser.
 
 ### Deployment
 
-`https://salty-ravine-98503.herokuapp.com/`
+`https://calm-bastion-63762.herokuapp.com/`
 
 ## Authors
 
 Tashfeen Rao `https://github.com/TashfeenRao`
+Ko Nyan `https://github.com/konyan`
 
 ## 🤝 Contributing
 

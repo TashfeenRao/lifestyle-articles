@@ -1,3 +1,6 @@
 class Category < ApplicationRecord
-  has_many :articles, foreign_key: 'category_id', class_name: 'Article'
+  has_many :article_categories
+  has_many :articles, through: :article_categories
+  validates :name, presence: true
+  validates :priority, presence: true
 end

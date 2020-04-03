@@ -1,10 +1,9 @@
-<%= render 'shared/header'%>
 <div class="container-fluid">
     <div class="row d-flex flex-wrap justify-content-center">
             <%article_with_category%>
             <%if @art_cat.each do |art|%>
-            <div class="card mb-3 flex-direction col-sm-12 col-md-12 col-lg-6 justify-content-center">
-                <div class="">
+            <div class="card mb-3 flex-direction col-sm-12 col-lg-6 justify-content-center">
+                <div class="col-md-6">
                     <%= image_tag(art.image,class:"card-img")%>
                 </div>
                 <div class="card-body col-md-5">
@@ -17,7 +16,7 @@
                     <p class="card-text"><%= art.text%> </p>
                     <%end%>
                     <% if current_user%>
-                    <small class="text-muted"><%= vote_devote(art)%></small>
+                    <small class="text-muted"><%= vote_devote(art,@category)%></small>
                     <%end%>
                     <small class="text-muted">Count <%= vote_count(art) %></small>
                 </div>
