@@ -1,12 +1,17 @@
-# Life Style Articles
-
-> This is a blog website. User can read articles. Only members can write articles with images and category to article. logged in user can also give vote to articles
+<h1 align="center">
+Life Style Articles
+</h1>
+> LifeStyle Articles Project is built using the Ruby Rails framework. The project is about Blog posting for topics like fashion, entertainment, sports,.etc For Reader there are options to like/comment on posts.
 
 ## Built With
 
 - Ruby v2.6.5
-- Ruby on Rails v5.2.4
-
+- Ruby on Rails v6.1.4
+- Rspec
+- Lucid Chart
+## Screen Shots
+![screenshot](screencapture-calm-bastion-63762-herokuapp-2020-06-13-19_32_26.png)
+![screenshot](screencapture-calm-bastion-63762-herokuapp-articles-11-2020-06-13-19_32_48.png)
 ## Live Demo
 
 `https://calm-bastion-63762.herokuapp.com/`
@@ -82,4 +87,4 @@ Heroku
 
 ## 📝 License
 
-TBA
+MIT
