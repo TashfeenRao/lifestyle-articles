@@ -1,7 +1,7 @@
 <h1 align="center">
 Life Style Articles
 </h1>
-> LifeStyle Articles Project is built using the Ruby Rails framework. The project is about Blog posting for topics like fashion, entertainment, sports,.etc For Reader there are options to like/comment on posts.
+LifeStyle Articles Project is built using the Ruby on Rails framework. The project is about article writing on any topics like fashion, entertainment, sports, etc user can also include images in their articles. For readers, there are options to like/comment on articles.
 
 ## Built With
 
@@ -88,3 +88,13 @@ Heroku
 ## 📝 License
 
 MIT
+
+[Tashfeen Rao](https://tashfeenrao.github.io/personal-portfolio/) &nbsp;&middot;&nbsp;
+</br>
+Email: tashfeendev@gmail.com &nbsp;&middot;&nbsp;
+</br>
+AngelList [TashfeenRao](https://angel.co/u/tashfeen-rao) &nbsp;&middot;&nbsp;
+</br>
+LinkedIn [Tashfeen Rao](https://www.linkedin.com/in/tashfeen-rao/) &nbsp;&middot;&nbsp;
+</br>
+Twitter [@TashfeenDev](https://twitter.com/TashfeenDev) &nbsp;&middot;&nbsp;
