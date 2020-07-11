@@ -54,7 +54,6 @@ $ rails server
 ## Screen Shot
 
 ![screenshot](screencapture-calm-bastion-63762-herokuapp-2020-06-13-19_32_26.png)
-![screenshot](screencapture-calm-bastion-63762-herokuapp-articles-11-2020-06-13-19_32_48.png)
 
 ## Live version
 
