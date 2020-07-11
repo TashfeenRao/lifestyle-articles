@@ -1,95 +1,90 @@
 <h1 align="center">
-Life Style Articles
+  <br>
+    Life Style Articles
+  <br>
 </h1>
-LifeStyle Articles Project is built using the Ruby on Rails framework. The project is about article writing on any topics like fashion, entertainment, sports, etc user can also include images in their articles. For readers, there are options to like/comment on articles.
 
-## Built With
+<h4 align="center">Implemented blog publishing web application. Users can write articles for different categories as well as like, comment on articles. Built with: Bootstrap, Rails, Devise, Omniauth, Rspec, Rubocop, GitHub, Heroku.
+</h4>
+</br>
 
-- Ruby v2.6.5
-- Ruby on Rails v6.1.4
-- Rspec
-- Lucid Chart
-## Screen Shots
+![Contributors](https://img.shields.io/badge/Contributor-Tashfeen-green)
+![build](https://img.shields.io/badge/build-passing-green)
+![NPM](https://img.shields.io/badge/NPM-14.01-green)
+![npm bundle size](https://img.shields.io/bundlephobia/min/react?color=green)
+![Version](https://img.shields.io/badge/version-1.0.0-green)
+![Hackage-Deps](https://img.shields.io/hackage-deps/v/json)
+![Issues](https://img.shields.io/badge/issues-0-green)
+![Twitter Follow](https://img.shields.io/twitter/follow/TashfeenDev?label=Tashfeen&style=social)
+
+</br>
+
+<p align="center">
+  <a href="#key-features">Key Features</a> •
+  <a href="#how-to-use">How To Use</a> •
+  <a href="#credits">Credits</a> •
+  <a href="#screen-shot">Screen Shot</a> •
+  <a href="#license">License</a> •
+  <a href="#author">Author</a> •
+</p>
+
+## Key Features
+
+* User can create writer account
+* User can write articles
+* User can read articles
+* User can comment and like articles
+
+## How To Use
+
+```bash
+# Clone this repository
+$ git clone https://github.com/TashfeenRao/lifestyle-articles.git
+
+# Go into the repository
+$ cd lifestyle-articles
+
+# Install dependencies
+$ bundle install
+
+# Run the app
+$ rails server
+```
+
+## Screen Shot
+
 ![screenshot](screencapture-calm-bastion-63762-herokuapp-2020-06-13-19_32_26.png)
 ![screenshot](screencapture-calm-bastion-63762-herokuapp-articles-11-2020-06-13-19_32_48.png)
-## Live Demo
 
-`https://calm-bastion-63762.herokuapp.com/`
+## Live version
 
-## Getting Started
+https://calm-bastion-63762.herokuapp.com/
 
-To get a local copy up and running follow these simple example steps.
+## Emailware
 
-### Prerequisites
+Lifestyle articles is an Open-source. if you liked using this app or it has helped you in any way, I'd like you to send me an email at <raotashfeen25@gmail.com> about anything you'd want to say about this software. I'd appreciate it!
 
-Ruby: 2.6.3
-Rails: 5.2.3
-Postgres: >=9.5
+## Credits
 
-### Setup
+This software uses the following open-source packages:
 
-Instal gems with:
+- [Rails](https://rubyonrails.org/)
+- [Node.js](https://nodejs.org/)
+- [Webpack](https://webpack.js.org/)
+- [Jest](https://jestjs.io/)
+- [Microverse](http://microverse.org/)
+- [Odin Project](https://www.theodinproject.com/)
 
-```
-bundle install
-```
-
-Setup database with:
-
-```
-   rails db:create
-   rails db:migrate
-```
-
-### Usage
-
-Start server with:
-
-```
-    rails server
-```
-
-Open `http://localhost:3000/` in your browser.
-
-Open `https://calm-bastion-63762.herokuapp.com/` in your browser.
-
-### Run tests
-
-```
-    rpsec --format documentation
-```
-
-> Tests will be added by Microverse students. There are no tests for initial features in order to make sure that students write all tests from scratch.
-
-### Deployment
-
-`https://calm-bastion-63762.herokuapp.com/`
-
-## Authors
-
-Tashfeen Rao `https://github.com/TashfeenRao`
-Ko Nyan `https://github.com/konyan`
-
-## 🤝 Contributing
-
-Contributions, issues and feature requests are welcome!
-
-Feel free to check the [issues page](issues/).
-
-## Show your support
-
-Give a ⭐️ if you like this project!
-
-## Acknowledgments
-
-Microverse
-Heroku
-
-## 📝 License
+## License
 
 MIT
 
-Portfolio [Tashfeen Rao](https://tashfeen-rao.netlify.app/) &nbsp;&middot;&nbsp;
+## Author
+---
+
+<h2>Tashfeen Rao </h2>
+
+Porfolio [Tashfeen Rao](https://tashfeen-rao.netlify.app/) &nbsp;&middot;&nbsp;
 </br>
 Email: tashfeendev@gmail.com &nbsp;&middot;&nbsp;
 </br>
